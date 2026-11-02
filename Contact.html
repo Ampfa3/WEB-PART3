@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ampfa's Beauty Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="logo">Ampfa's Beauty Store</a>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+
+    <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Product.html">Products</a>
+        <a href="Enquiry.html">Enquiry</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="page-banner">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you. Contact Ampfa's Beauty Store.</p>
+</section>
+
+<section>
+
+    <div class="section-intro">
+        <h2>Get In Touch</h2>
+        <p>Send us your questions, comments or feedback.</p>
+    </div>
+
+    <div class="contact-grid">
+
+        <article class="location-card">
+            <h3>Our Contact Information</h3>
+
+            <p><strong>Business:</strong> Ampfa's Beauty Store</p>
+
+            <p><strong>Email:</strong> Add your business email address</p>
+
+            <p><strong>Phone:</strong> Add your business phone number</p>
+
+            <p><strong>Location:</strong> Add your business address</p>
+
+            <p>For product information, please use our enquiry page.</p>
+
+            <a href="Enquiry.html" class="button">Product Enquiry</a>
+        </article>
+
+        <article class="location-card">
+            <h3>Our Location</h3>
+
+            <p>Use the map to view Johannesburg and Pretoria as general reference points.</p>
+
+            <iframe
+                title="Map of Johannesburg"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=27.9%2C-26.3%2C28.3%2C-26.0&layer=mapnik"
+                width="100%"
+                height="300"
+                style="border:0;"
+                loading="lazy">
+            </iframe>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="soft-section">
+
+    <form class="form-card" id="contactForm">
+
+        <h2>Send Us a Message</h2>
+
+        <label for="contactName">Full Name *</label>
+        <input type="text" id="contactName" name="name" required minlength="2">
+
+        <label for="contactEmail">Email Address *</label>
+        <input type="email" id="contactEmail" name="email" required>
+
+        <label for="contactPhone">Phone Number</label>
+        <input type="tel" id="contactPhone" name="phone">
+
+        <label for="messageType">Message Type *</label>
+        <select id="messageType" name="type" required>
+            <option value="">Choose a message type</option>
+            <option>General Question</option>
+            <option>Feedback</option>
+            <option>Complaint</option>
+            <option>Support</option>
+        </select>
+
+        <label for="contactDetails">Your Message *</label>
+        <textarea id="contactDetails" name="message"
+                  rows="6" minlength="10" required
+                  placeholder="Write your message here..."></textarea>
+
+        <button type="submit" class="primary">Send Message</button>
+
+        <p id="contactStatus" class="form-status" role="status"></p>
+
+    </form>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <h3>Ampfa's Beauty Store</h3>
+    <p>&copy; 2026 Ampfa's Beauty Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

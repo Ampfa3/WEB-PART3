@@ -1,0 +1,10 @@
+
+# Robots.txt for Ampfa's Beauty Store
+
+User-agent: *
+
+# Allow search engines to access the website
+Allow: /
+
+# Sitemap location
+Sitemap: https://Ampfa3.github.io/ampfas-beauty-store/

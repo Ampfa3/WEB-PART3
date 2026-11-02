@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Ampfa's Beauty Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="logo">Ampfa's Beauty Store</a>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+
+    <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Product.html" aria-current="page">Products</a>
+        <a href="Enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="page-banner">
+    <h1>Our Products and Services</h1>
+    <p>Explore some of the beauty and personal-care categories available at Ampfa's Beauty Store.</p>
+</section>
+
+<section>
+
+    <div class="section-intro">
+        <h2>Beauty Products</h2>
+        <p>Search for a product category or use the buttons to filter products.</p>
+    </div>
+
+    <div class="product-tools">
+        <input type="search"
+               id="productSearch"
+               placeholder="Search for products..."
+               aria-label="Search products">
+    </div>
+
+    <div class="tabs">
+        <button class="filter-button active" data-filter="all">All Products</button>
+        <button class="filter-button" data-filter="skin">Skincare</button>
+        <button class="filter-button" data-filter="hair">Hair Care</button>
+        <button class="filter-button" data-filter="body">Body Care</button>
+        <button class="filter-button" data-filter="accessories">Accessories</button>
+    </div>
+
+    <p id="productCount" class="small-note" aria-live="polite"></p>
+
+    <div class="product-grid" id="productGrid">
+
+        <article class="product-card" data-category="skin">
+            <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&q=80" alt="Skincare essentials">
+            <h3>Skincare Essentials</h3>
+            <p>Discover cleansers, moisturisers and other skincare essentials.</p>
+            <a class="button" href="Enquiry.html?product=Skincare%20Essentials">Make Enquiry</a>
+        </article>
+
+        <article class="product-card" data-category="skin">
+            <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80" alt="Face care products">
+            <h3>Face Care</h3>
+            <p>Explore products for everyday face-care routines.</p>
+            <a class="button" href="Enquiry.html?product=Skincare%20Essentials">Make Enquiry</a>
+        </article>
+
+        <article class="product-card" data-category="hair">
+            <img src="https://images.unsplash.com/photo-1600612253971-422e7f7faeb6?auto=format&fit=crop&w=600&q=80" alt="Haircare products">
+            <h3>Hair Care</h3>
+            <p>Find haircare products for your personal hair routine.</p>
+            <a class="button" href="Enquiry.html?product=Hair%20Care">Make Enquiry</a>
+        </article>
+
+        <article class="product-card" data-category="hair">
+            <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=600&q=80" alt="Hair styling products">
+            <h3>Hair Styling</h3>
+            <p>Explore products and accessories for styling your hair.</p>
+            <a class="button" href="Enquiry.html?product=Hair%20Care">Make Enquiry</a>
+        </article>
+
+        <article class="product-card" data-category="body">
+            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80" alt="Body care products">
+            <h3>Body Care</h3>
+            <p>Explore body-care essentials for everyday use.</p>
+            <a class="button" href="Enquiry.html?product=Body%20Care">Make Enquiry</a>
+        </article>
+
+        <article class="product-card" data-category="body">
+            <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80" alt="Body lotion">
+            <h3>Body Lotions</h3>
+            <p>Discover moisturising products for your body-care routine.</p>
+            <a class="button" href="Enquiry.html?product=Body%20Care">Make Enquiry</a>
+        </article>
+
+        <article class="product-card" data-category="accessories">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=80" alt="Beauty accessories">
+            <h3>Beauty Accessories</h3>
+            <p>Explore accessories for your daily beauty routine.</p>
+            <a class="button" href="Enquiry.html?product=Beauty%20Accessories">Make Enquiry</a>
+        </article>
+
+        <article class="product-card" data-category="accessories">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" alt="Makeup accessories">
+            <h3>Makeup Accessories</h3>
+            <p>Discover beauty tools and makeup accessories.</p>
+            <a class="button" href="Enquiry.html?product=Beauty%20Accessories">Make Enquiry</a>
+        </article>
+
+    </div>
+
+    <p id="noProducts" class="hidden">No matching products found.</p>
+
+</section>
+
+<section class="cta">
+    <h2>Interested in Our Products?</h2>
+    <p>Contact us for more information about products and availability.</p>
+    <a href="Enquiry.html" class="button button-light">Make an Enquiry</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <h3>Ampfa's Beauty Store</h3>
+    <p>&copy; 2026 Ampfa's Beauty Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
